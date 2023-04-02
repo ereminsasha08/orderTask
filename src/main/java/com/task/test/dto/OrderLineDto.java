@@ -32,4 +32,10 @@ public class OrderLineDto {
         this.name = name;
         this.count = count;
     }
+
+    public OrderLineDto(Long id, String name, Integer count) {
+        this.id = id;
+        this.name = name;
+        this.count = count;
+    }
 }

@@ -17,4 +17,7 @@ public abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mySequence")
     Long id;
 
+    public BaseEntity(Long id) {
+        this.id = id;
+    }
 }
