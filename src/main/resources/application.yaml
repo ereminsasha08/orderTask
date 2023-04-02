@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    defer-datasource-initialization: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: h2
+    show-sql: true
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  jackson.visibility:
+    field: any
+    getter: none
+    setter: none
+    is-getter: none
+logging:
+  level:
+    root: info
