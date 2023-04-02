@@ -38,7 +38,7 @@ public class GoodsServiceImp implements GoodsService {
     @Override
     @Transactional
     public Goods create(Goods goods) {
-        if (!goods.isNew())
+        if (goods.getId() != null)
             throw new RuntimeException("У нового заказа не может быть id");
         return goodsRepository.save(goods);
     }

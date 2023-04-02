@@ -26,4 +26,10 @@ public class OrderLineDto {
         orderLine.setGoods(goods);
         return orderLine;
     }
+
+    public OrderLineDto(String name, Integer count) {
+
+        this.name = name;
+        this.count = count;
+    }
 }

@@ -36,7 +36,7 @@ public class OrderServiceImp implements OrderService {
     @Override
     @Transactional
     public OrderDto create(Order order) {
-        if (!order.isNew())
+        if (order.getId() != null)
             throw new RuntimeException("У нового заказа не может быть id");
         return new OrderDto(orderRepository.save(order));
 

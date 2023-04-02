@@ -23,4 +23,10 @@ public class Goods extends BaseEntity {
     @OneToMany(mappedBy = "goods")
     @JsonIgnore
     private List<OrderLine> orderLines;
+
+
+    public Goods(String name, BigDecimal price) {
+        this.name = name;
+        this.price = price;
+    }
 }

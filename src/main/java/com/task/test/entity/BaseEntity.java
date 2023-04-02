@@ -17,9 +17,4 @@ public abstract class BaseEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mySequence")
     Long id;
 
-
-    public boolean isNew(){
-        return id == null;
-    }
-
 }
