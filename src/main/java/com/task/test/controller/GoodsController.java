@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = GoodsController.REST_URL)
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class GoodsController {
     public static final String REST_URL = "/goods";
 

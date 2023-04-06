@@ -17,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping(OrderController.REST_URL)
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class OrderController {
     public static final String REST_URL = "/orders";
 
